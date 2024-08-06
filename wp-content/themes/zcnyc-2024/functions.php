@@ -27,8 +27,8 @@ function asw_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Homepage Hero',
 		'id'            => 'homepage_hero',
-		'before_widget' => '',
-		'after_widget'  => '',
+		'before_widget' => '<div class="hero homepage">',
+		'after_widget'  => '</div>',
 		'before_title'  => '',
 		'after_title'   => ''
 	) );

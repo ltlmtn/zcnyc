@@ -43,6 +43,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header id="top">
   <?php
+    if( is_front_page() && is_active_sidebar('homepage_hero') ) {
+      dynamic_sidebar( 'homepage_hero' );
+    } else {
+      get_template_part('snippets/hero');
+    }
     get_template_part('snippets/banner');
     get_template_part('snippets/header_nav');
   ?>
