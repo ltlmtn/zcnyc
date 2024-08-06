@@ -1,0 +1,78 @@
+@media screen and (min-width: 1080px) {
+
+    .homepage-hero .floating-image {
+      right: 200px;
+    }
+
+    .homepage-hero .floating-image {
+        max-width: 200px;
+    }
+
+    .homepage-hero h1 {
+        font-size: 3rem;
+    }
+
+    .header-areas .wordmark {
+        font-size: 1.25em;
+    }
+    
+    .header-areas .wordmark .tagline {
+        font-size: 0.65em;
+    }
+    
+    .header-areas .logo img {
+        height: 5rem;
+    }
+    
+    .menu-toggle {
+        font-size: 2rem;
+    }
+
+    .homepage-hero {
+        padding: 4rem 0;
+    }
+    
+    section.wp-block-group {
+        padding: 2rem 0;
+    }
+    
+    .accordion-cta h2 {
+        font-size: 3rem;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .accordion-cta-image {
+        max-width: 75%;
+    }
+    
+    .accordion-cta-image img {
+        width: 100%;
+    }
+
+    .homepage-punchline {
+        margin-top: 4rem;
+    }
+
+    .homepage-punchline h2 {
+        font-size: 3rem;
+    }
+    
+    .homepage-punchline .lower-content {
+        translate: 0 -20%;
+    }
+    
+    .homepage-punchline .blurb {
+        font-size: 1.5rem;
+    }
+    
+    .additive-table .additive {
+        height: 150px;
+        width: 150px;
+    }
+
+    .additive-table .function {
+      font-size: 3rem;
+    }
+
+}

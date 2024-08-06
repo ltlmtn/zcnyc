@@ -1,0 +1,84 @@
+/*
+Theme Name: ZCNYC 2024
+Theme URI:
+Author: Elliot Toman
+Author URI: https://www.ltlmtn.com
+Description: 
+Version: 1.0
+License: 
+License URI: 
+Tags: 
+Text Domain: 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --primary: 'Libre Franklin', sans-serif;
+    --secondary: 'Lora', serif;
+    --decorative: 'Dry Brush', cursive;
+    --smoke: #EDEDED;
+    --charcoal: #333333;
+    --red: #A22931;
+    --desktop: 1280px;
+    --slim: 800px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.asw .has-white-color { color: white; }
+.asw .has-white-background-color { background-color: white; }
+.asw .has-black-color { color: black; }
+.asw .has-black-background-color { background-color: black; }
+.asw .has-smoke-color { color: var(--smoke); }
+.asw .has-smoke-background-color { background-color: var(--smoke); }
+.asw .has-charcoal-color { color: var(--charcoal); }
+.asw .has-charcoal-background-color { background-color: var(--charcoal); }
+.asw .has-red-color { color: var(--red); }
+.asw .has-red-background-color { background-color: var(--red); }
+
+
+/* Full width video embeds */
+.wp-block-embed .wp-block-embed__wrapper,
+.is-type-video .wp-block-embed__wrapper {
+    height: 0;
+    padding-top: 60%;
+    position: relative;
+    width: 100%;
+}
+
+.wp-block-embed .wp-block-embed__wrapper iframe,
+.is-type-video .wp-block-embed__wrapper iframe {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.asw .yotu-playlist {
+    display: table;
+    padding: 0;
+}
+
+.asw .yotu-videos {
+    padding: 0;
+}
+
+.asw .yotu-videos li > a,
+.asw .yotu-videos .yotu-video h3 {
+    color: black;
+}
+
+.grecaptcha-badge {
+    display: none !important;
+}

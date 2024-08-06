@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Dry Brush';
+    src: url('DryBrush.woff2') format('woff2'),
+        url('DryBrush.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
