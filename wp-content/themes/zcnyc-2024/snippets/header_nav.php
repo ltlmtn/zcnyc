@@ -4,6 +4,7 @@
 
 <div class="header-areas desktop-width">
     <div class="logo">
+        <div class="logo-background"></div>
         <a href="<?= get_home_url(); ?>">
             <img src="<?= $theme; ?>/assets/images/logo-header.svg" alt="ZCNYC Logo" />
         </a>

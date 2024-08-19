@@ -44,13 +44,6 @@ a:hover {
   display: none;
 }
 
-.hero {
-  background-color: var(--smoke);
-  height: 80vh;
-  position: relative;
-  z-index: 0;
-}
-
 .header-areas {
   align-items: center;
   display: grid;
@@ -66,9 +59,25 @@ header {
 }
 
 .header-areas .logo {
-  background-color: var(--red);
   padding: 1rem 1rem 1rem 0;
   position: relative;
+}
+
+.header-areas .logo a {
+  position: relative;
+  z-index: 1;
+}
+
+.header-areas .logo-background {
+  background-color: var(--red);
+  content: " ";
+  height: 100%;
+  left: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
 }
 
 .header-areas .logo:before {
@@ -76,9 +85,11 @@ header {
   content: " ";
   height: 100%;
   left: -50vw;
+  mix-blend-mode: multiply;
   position: absolute;
   top: 0;
   width: 50vw;
+  z-index: 0;
 }
 
 .header-areas .menu-toggle {
@@ -101,4 +112,97 @@ body.menu-active .header-areas .menu-open {
   max-height: 0;
   overflow: hidden;
   transition: all 1s ease 0s;
+}
+
+.hero {
+  background-color: var(--smoke);
+  position: relative;
+  z-index: 0;
+}
+
+.hero-carousel .image {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.hero-carousel.monochrome .image {
+  filter: grayscale(100%);
+}
+
+.hero-carousel .slick-list {
+  height: 80vh;
+}
+
+.hero-carousel .slick-track {
+  height: 100%;
+}
+
+.hero-carousel .content {
+  color: white;
+  left: 50%;
+  max-width: var(--desktop);
+  position: absolute;
+  bottom: 6rem;
+  translate: -50% 0;
+  width: calc( 100% - 2rem );
+}
+
+.hero-carousel .content h2 {
+  font: normal 3.5rem/1 var(--decorative);
+  hyphens: auto;
+}
+
+.hero-carousel .image:before {
+  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+  bottom: 0;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.hero-carousel .slick-dots {
+  bottom: 3rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+}
+
+.hero-carousel .slick-dots button {
+  background-color: rgba(255,255,255,0.5);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0;
+  display: block;
+  height: 8px;
+  width: 8px;
+}
+
+.hero-carousel .slick-dots .slick-active button {
+  background-color: rgba(255,255,255,1);
+}
+
+.hero-carousel:after {
+  background-size: cover;
+  background-image: url(../images/hero-mask.png);
+  bottom: -5px;
+  content: " ";
+  display: block;
+  height: 2rem;
+  left: -5px;
+  width: calc( 100% + 5px );
+  position: absolute;
+  z-index: 1;
 }
