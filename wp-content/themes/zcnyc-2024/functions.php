@@ -127,3 +127,4 @@ add_action( 'template_redirect', 'redirect_404_to_homepage' );
 get_template_part('customizations/page-seo');
 get_template_part('customizations/customizations');
 get_template_part('customizations/post_options');
+get_template_part('customizations/programs_shortcode');

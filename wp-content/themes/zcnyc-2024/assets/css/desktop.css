@@ -24,6 +24,48 @@
         bottom: 4rem;
     }
 
+    .events-carousel {
+      margin: 2rem auto;
+      max-width: var(--desktop);
+      translate: 0;
+      width: 100%;
+    }
+    
+    .events-carousel .slick-arrow.slick-next {
+        right: calc( (( 100% - 800px ) / 2) - 3rem );
+    }
+    
+    .events-carousel .slick-arrow.slick-prev {
+        left: calc( (( 100% - 800px ) / 2) - 3rem );
+    }
+
+    .events-carousel:before {
+        background: transparent url('../images/programs-carousel-mask.png') left top no-repeat;
+        background-size: cover;
+        content: " ";
+        display: block;
+        height: calc( 100% + 10px );
+        left: 0;
+        position: absolute;
+        top: -5px;
+        width: calc( ( 100% - 800px ) / 2.5 );
+        z-index: 2;
+    }
+
+    .events-carousel:after {
+        background: transparent url('../images/programs-carousel-mask.png') left top no-repeat;
+        background-size: cover;
+        content: " ";
+        display: block;
+        height: calc( 100% + 10px );
+        right: 0;
+        rotate: 180deg;
+        position: absolute;
+        top: -5px;
+        width: calc( ( 100% - 800px ) / 2.5 );
+        z-index: 2;
+    }
+
 }
 
 @media screen and ( min-width: 1280px ) {

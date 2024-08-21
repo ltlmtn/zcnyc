@@ -1,5 +1,32 @@
 @media screen and (min-width: 800px) {
 
+    .events-carousel .slide-areas {
+        align-items: stretch;
+        display: grid;
+        grid-template-columns: 33.33% 1fr;
+        min-height: 15rem;
+    }
     
+    .events-carousel .program-image {
+        height: 100%;
+        padding: 0;
+    }
+    
+    .events-carousel .program-meta {
+        translate: 0;
+    }
+    
+    .events-carousel .program-date {
+        padding-left: 1rem;
+    }
+
+    .events-carousel .slick-slide {
+        margin: 0 0.5rem;
+    }
+
+    .events-carousel .slick-arrow {
+        top: 50%;
+        translate: 0 -50%;
+    }
 
 }
