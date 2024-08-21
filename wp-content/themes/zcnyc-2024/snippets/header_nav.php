@@ -2,6 +2,8 @@
     $theme = get_stylesheet_directory_uri();
 ?>
 
+<div class="menu-shader"></div>
+
 <div class="header-areas desktop-width">
     <div class="logo">
         <div class="logo-background"></div>
