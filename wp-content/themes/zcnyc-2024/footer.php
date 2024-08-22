@@ -4,13 +4,13 @@
 ?>
 
 <footer>
-    <div class="footer-content content-width">
+    <div class="footer-content desktop-width">
         <?php if ( is_active_sidebar( 'footer_content' ) ) : ?>
             <?php dynamic_sidebar( 'footer_content' ); ?>
         <?php endif; ?>
     </div>
     <div class="credits">
-        <div class="content-width">
+        <div class="desktop-width">
             Website by <a href="https://ltlmtn.com" target="_blank">LTL MTN</a>
         </div>
     </div>
