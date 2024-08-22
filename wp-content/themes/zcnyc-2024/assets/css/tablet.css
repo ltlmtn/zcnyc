@@ -29,4 +29,39 @@
         translate: 0 -50%;
     }
 
+    .big-cta .image.mobile {
+        display: none;
+    }
+    
+    .big-cta .image.desktop {
+        display: block;
+        padding-top: 50%;
+    }
+    
+    .big-cta .content {
+        background: linear-gradient( to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) );
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 25%;
+        position: absolute;
+        translate: 0;
+    }
+    
+    .big-cta h2 {
+        grid-column: 1 / span 2;
+        font-size: 1.5rem;
+        padding: 1rem;
+        width: fit-content;
+    }
+    
+    .big-cta .blurb {
+        font-size: 1rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    .big-cta a.button {
+        margin: 1rem;
+    }
+
 }
