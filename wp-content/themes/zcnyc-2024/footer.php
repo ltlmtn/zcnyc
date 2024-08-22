@@ -3,6 +3,12 @@
     $site_name = get_bloginfo('name');
 ?>
 
+<?php
+    if( is_front_page() ) {
+        get_template_part('snippets/footer_newsletter');
+    }
+?>
+
 <footer>
     <div class="footer-content desktop-width">
         <?php if ( is_active_sidebar( 'footer_content' ) ) : ?>

@@ -65,17 +65,17 @@ function mytheme_setup() {
 		array(
 			'name' => __( 'Smoke' ),
 			'slug' => 'smoke',
-			'color' => '#F2F1F0',
+			'color' => '#EDEDED',
 		),
 		array(
-			'name' => __( 'Gold' ),
-			'slug' => 'gold',
-			'color' => '#EFC561',
+			'name' => __( 'Red' ),
+			'slug' => 'red',
+			'color' => '#A22931',
 		),
 		array(
-			'name' => __( 'Gray' ),
-			'slug' => 'gray',
-			'color' => '#7C7C7C',
+			'name' => __( 'Charcoal' ),
+			'slug' => 'charcoal',
+			'color' => '#333333',
 		)
 	) );
 	add_theme_support( 'disable-custom-colors' );

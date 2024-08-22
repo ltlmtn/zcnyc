@@ -1,79 +1,104 @@
 @media screen and (min-width: 1080px) {
 
-    .hero-carousel .image:before {
-      background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
-      width: 50%;
-    }
+  .hero-carousel .image:before {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 50%;
+  }
 
-    .hero-carousel .content {
-      color: white;
-      left: 50%;
-      max-width: var(--desktop);
-      position: absolute;
-      bottom: 50%;
-      translate: -50% 50%;
-    }
-    
-    .hero-carousel .content h2 {
-      font: normal 6rem/1 var(--decorative);
-      hyphens: auto;
-      max-width: 50%;
-    }
+  .hero-carousel .content {
+    color: white;
+    left: 50%;
+    max-width: var(--desktop);
+    position: absolute;
+    bottom: 50%;
+    translate: -50% 50%;
+  }
 
-    .hero-carousel .slick-dots {
-        bottom: 4rem;
-    }
+  .hero-carousel .content h2 {
+    font: normal 6rem/1 var(--decorative);
+    hyphens: auto;
+    max-width: 50%;
+  }
 
-    .events-carousel {
-      margin: 2rem auto;
-      max-width: var(--desktop);
-      translate: 0;
-      width: 100%;
-    }
-    
-    .events-carousel .slick-arrow.slick-next {
-        right: calc( (( 100% - 800px ) / 2) - 3rem );
-    }
-    
-    .events-carousel .slick-arrow.slick-prev {
-        left: calc( (( 100% - 800px ) / 2) - 3rem );
-    }
+  .hero-carousel .slick-dots {
+    bottom: 4rem;
+  }
 
-    .events-carousel:before {
-        background: transparent url('../images/programs-carousel-mask.png') left top no-repeat;
-        background-size: cover;
-        content: " ";
-        display: block;
-        height: calc( 100% + 10px );
-        left: 0;
-        position: absolute;
-        top: -5px;
-        width: calc( ( 100% - 800px ) / 2.5 );
-        z-index: 2;
-    }
+  .events-carousel {
+    margin: 2rem auto;
+    max-width: var(--desktop);
+    translate: 0;
+    width: 100%;
+  }
 
-    .events-carousel:after {
-        background: transparent url('../images/programs-carousel-mask.png') left top no-repeat;
-        background-size: cover;
-        content: " ";
-        display: block;
-        height: calc( 100% + 10px );
-        right: 0;
-        rotate: 180deg;
-        position: absolute;
-        top: -5px;
-        width: calc( ( 100% - 800px ) / 2.5 );
-        z-index: 2;
-    }
+  .events-carousel .slick-arrow.slick-next {
+    right: calc(((100% - 800px) / 2) - 3rem);
+  }
 
-    .cta-grid.columns-4 {
-      grid-template-columns: repeat(4, 1fr);
-    }
+  .events-carousel .slick-arrow.slick-prev {
+    left: calc(((100% - 800px) / 2) - 3rem);
+  }
+
+  .events-carousel:before {
+    background: transparent url('../images/programs-carousel-mask.png') left top no-repeat;
+    background-size: cover;
+    content: " ";
+    display: block;
+    height: calc(100% + 10px);
+    left: 0;
+    position: absolute;
+    top: -5px;
+    width: calc((100% - 800px) / 2.5);
+    z-index: 2;
+  }
+
+  .events-carousel:after {
+    background: transparent url('../images/programs-carousel-mask.png') left top no-repeat;
+    background-size: cover;
+    content: " ";
+    display: block;
+    height: calc(100% + 10px);
+    right: 0;
+    rotate: 180deg;
+    position: absolute;
+    top: -5px;
+    width: calc((100% - 800px) / 2.5);
+    z-index: 2;
+  }
+
+  .cta-grid.columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .offset-poster {
+    margin-left: 50%;
+    position: relative;
+    translate: -50% 0;
+    width: 100vw;
+  }
+
+  .offset-poster-content {
+    flex-basis: auto;
+    width: 400px;
+  }
+
+  .offset-poster .offset-poster-image {
+    flex-basis: 50%;
+    width: calc(50vw - 400px);
+  }
+
+  .offset-poster.right {
+    justify-content: flex-end;
+  }
+
+  .footer-content {
+    grid-gap: 2rem;
+  }
 
 }
 
-@media screen and ( min-width: 1280px ) {
-    .header-areas {
-        left: calc( (100vw - var(--desktop)) / 2 );
-    }
+@media screen and (min-width: 1280px) {
+  .header-areas {
+    left: calc((100vw - var(--desktop)) / 2);
+  }
 }

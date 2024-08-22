@@ -386,7 +386,8 @@ body.menu-active .menu-shader {
   margin: 0.5rem;
 }
 
-a.button {
+a.button,
+.asw a.wp-block-button__link {
   background-color: var(--red);
   border-radius: 8px;
   color: white;
@@ -394,12 +395,14 @@ a.button {
   padding: 1rem;
 }
 
-a.button:hover {
+a.button:hover,
+.asw a.wp-block-button__link:hover {
   opacity: 0.85;
   text-decoration: none;
 }
 
-a.button:after {
+a.button:after,
+.asw a.wp-block-button__link:after {
   content: "\2192";
   margin-left: 0.5rem;
   transition: all 500ms ease 0s;
@@ -412,7 +415,7 @@ a.button:hover:after {
 footer {
   background-color: black;
   color: white;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .cta-grid {
@@ -425,6 +428,10 @@ footer {
 .cta-grid-item {
   background-color: black;
   display: block;
+}
+
+.cta-grid.monochrome .cta-grid-image {
+  filter: grayscale(1);
 }
 
 .cta-grid-image {
@@ -454,6 +461,119 @@ footer {
 }
 
 .cta-grid-summary {
+  color: white;
   font: italic 1rem var(--secondary);
-  padding: 0.5rem 1rem;
+  padding: 0 1rem 0.5rem 1rem;
+}
+
+.offset-poster {
+  margin: 1rem auto;
+}
+
+.offset-poster .offset-poster-image {
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1rem;
+  padding-top: 66.66%;
+  width: calc( 100vw - 1rem );
+  translate: -1rem 0;
+}
+
+.offset-poster.right .offset-poster-image {
+  translate: 0;
+}
+
+.offset-poster .heading {
+  font: 300 1.5rem var(--primary);
+  text-transform: uppercase;
+}
+
+.offset-poster .content {
+  font: normal 1rem var(--secondary);
+  margin: 1rem 0;
+}
+
+.footer-newsletter {
+  background-color: var(--smoke);
+  padding: 90px 0 1rem 0;
+  position: relative;
+}
+
+.footer-newsletter input {
+  background-color: white;
+  border: 1px solid white;
+  display: flex;
+  font: normal 0.85rem var(--secondary);
+  height: 2rem;
+  padding: 0 0.5rem;
+  width: 100%;
+}
+
+.footer-newsletter input[type=submit] {
+  background-color: var(--red);
+  border-color: var(--red);
+  color: white;
+  cursor: pointer;
+  font: bold 0.85rem var(--primary);
+  width: fit-content;
+}
+
+.footer-newsletter input[type=submit]:hover {
+  background-color: black;
+}
+
+.footer-newsletter input:focus {
+  border-color: var(--red);
+  outline: none;
+}
+
+.footer-newsletter label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.footer-newsletter .field {
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter .required {
+  color: var(--red);
+}
+
+.footer-newsletter:before {
+  background: transparent url('../images/newsletter-mask.png') center repeat-x;
+  content: " ";
+  height: 90px;
+  left: 0;
+  position: absolute;
+  top: -1rem;
+  width: 100%;
+}
+
+.footer-content {
+  color: var(--smoke);
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.footer-content p {
+  margin-bottom: 1rem;
+}
+
+.footer-content ul {
+  list-style-type: none;
+}
+
+.footer-content a {
+  color: white;
+}
+
+.footer-content a:hover {
+  color: var(--red);
+}
+
+.footer-content h3 {
+  margin-bottom: 1rem;
 }

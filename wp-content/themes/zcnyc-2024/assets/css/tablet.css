@@ -73,4 +73,40 @@
       grid-template-columns: 1fr 1fr;
     }
 
+    .offset-poster {
+        display: flex;
+    }
+    
+    .offset-poster .offset-poster-image {
+        flex-basis: 50%;
+        margin: 0;
+        padding: 0;
+        translate: -1rem 0;
+    }
+    
+    .offset-poster-content {
+        flex-basis: 50%;
+    }
+    
+    .offset-poster.right .offset-poster-image {
+        order: 2;
+        translate: 1rem 0;
+    }
+
+    .footer-newsletter .field:not(:last-of-type) {
+        flex-basis: 100%;
+    }
+
+    .footer-newsletter .fields {
+        align-items: flex-end;
+        display: flex;
+        gap: 1rem;
+        justify-content: stretch;
+    }
+
+    .footer-content {
+        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fill, minmax(0, 50%));
+    }
+
 }
