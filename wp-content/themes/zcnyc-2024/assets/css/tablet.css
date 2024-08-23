@@ -109,4 +109,24 @@
         grid-template-columns: repeat(auto-fill, minmax(0, 50%));
     }
 
+    .asw .rs-program {
+        align-items: start;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+    }
+    
+    .asw .rs-program-thumbnail {
+        width: 100%;
+    }
+    
+    .asw .rs-program-content-wrap {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .asw .single-program .rs-program-meta {
+        float: right;
+        margin: 0 0 2rem 2rem;
+    }
+
 }

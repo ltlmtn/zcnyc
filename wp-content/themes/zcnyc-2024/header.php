@@ -32,14 +32,10 @@
   } else {
     $loggedin = 'not-logged-in';
   }
+  $slug = get_post_field( 'post_name', get_post() );
 ?>
 
-<body id="body" class="asw <?php if(is_front_page()) { echo 'home '; } else { echo get_post_type(); echo ' '; } ?> <?= $loggedin; ?>">
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ43CHBF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<body id="body" class="asw <?php if(is_front_page()) { echo 'home '; } else { echo get_post_type() . ' ' . $slug; } ?> <?= $loggedin; ?>">
 
 <header id="top">
   <?php
