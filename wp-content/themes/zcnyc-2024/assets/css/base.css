@@ -859,3 +859,31 @@ body:not(.home) .page-content {
 .single-program .programs-filter {
   display: none;
 }
+
+body.teachers .rs-teacher.rs-group {
+  display: none;
+}
+
+.single-teacher {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.single-teacher .rs-teacher-programs {
+  clear: both !important;
+  float: none;
+}
+
+.single-teacher .rs-teacher-programs .program {
+  clear: both !important;
+  float: none !important;
+  margin-bottom: 2rem;
+}
+
+.single-teacher .rs-teacher-programs h3 {
+  margin-bottom: 1rem;
+}
+
+.single-teacher .rs-teacher-content {
+  padding: 1rem 0 !important;
+}
