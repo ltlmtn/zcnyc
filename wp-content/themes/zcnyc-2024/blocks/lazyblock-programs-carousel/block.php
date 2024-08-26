@@ -18,6 +18,7 @@
         $autoplay_speed = 5000;
     }
     $heading = $attributes['heading'];
+    $heading_url = $attributes['heading_url'];
     $description = $attributes['description'];
     $get_category_filter = $attributes['category_filter'];
     if( $get_category_filter == '' ) {
@@ -29,7 +30,11 @@
 
 <div class="events-carousel-headings page-width">
     <?php if( $heading ) : ?>
+        <?php if( $heading_url ) : ?>
+            <h2><a href="<?= $heading_url; ?>"><?= $heading; ?></a></h2>
+        <?php else : ?>
         <h2><?= $heading; ?></h2>
+        <?php endif; ?>
     <?php endif; ?>
     <?php if( $description ) : ?>
         <div class="description"><?= $description; ?></div>

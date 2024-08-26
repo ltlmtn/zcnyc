@@ -667,6 +667,7 @@ button {
   padding: 0.5rem;
 }
 
+li.active button,
 button.active {
   background-color: var(--charcoal);
 }
@@ -825,4 +826,36 @@ h1.rs-program-title {
 
 body:not(.home) .page-content {
   padding-bottom: 2rem;
+}
+
+.asw .rs-program,
+.asw .rs-teacher {
+  margin-bottom: 2rem;
+}
+
+.programs.zcnyc .rs-program:not(.zen-center-of-nyc-fire-lotus-temple),
+.programs.online .rs-program:not(.video-conference),
+.programs.zmm .rs-program:not(.zen-mountain-monastery),
+.programs.zmm .rs-program.video-conference {
+  display: none;
+}
+
+.programs .rs-program.practicing-member,
+.programs .rs-program.student-donations {
+  display: none !important;
+}
+
+.programs-filter ul {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+}
+
+.programs-filter .label {
+  margin-bottom: 1rem;
+}
+
+.single-program .programs-filter {
+  display: none;
 }

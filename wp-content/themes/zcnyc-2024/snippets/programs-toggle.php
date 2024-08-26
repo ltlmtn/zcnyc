@@ -10,7 +10,6 @@
     .rs-program:not(.zen-center-of-nyc-fire-lotus-temple) {
     display: none;
     }
-
     .rs-program.practicing-member,
     .rs-program.student-donations {
     display: none !important;
@@ -18,7 +17,6 @@
 </style>
 
 <script>
-
     document.getElementById('zcnyc').addEventListener('click', function() {
         document.getElementById('zcnyc').classList.add('active');
         document.getElementById('all').classList.remove('active');
@@ -45,5 +43,4 @@
             document.body.classList.add('single-program');
         }
     });
-
 </script>
