@@ -894,33 +894,33 @@ body.teachers .rs-teacher.rs-group {
   padding: 1rem 0 !important;
 }
 
-.page-content h2 {
+.page-content h2.wp-block-heading {
   font: bold 1.5rem var(--primary);
   margin-bottom: 1rem;
 }
 
-.page-content h3 {
+.page-content h3.wp-block-heading {
   font: 300 1.5rem var(--secondary);
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
-.page-content h4 {
+.page-content h4.wp-block-heading {
   font: bold 1rem var(--primary);
   margin-bottom: 1rem;
 }
 
-.page-content ul, 
-.page-content ol {
+.page-content ul.wp-block-list, 
+.page-content ol.wp-block-list {
   font-family: var(--secondary);
   margin: 1.25rem;
 }
 
-.page-content ul {
+.page-content ul.wp-block-list {
   list-style-type: square;
 }
 
-.page-content li {
+.page-content .wp-block-list li {
   margin-bottom: 0.5rem;
 }
 
