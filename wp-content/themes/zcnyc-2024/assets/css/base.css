@@ -928,6 +928,11 @@ body.teachers .rs-teacher.rs-group {
   border-color: var(--red);
 }
 
+.cta-grid h3 {
+  font: bold 1rem var(--primary);
+  margin: 0;
+}
+
 @media screen and ( max-width: 1079px ) {
   .mobile-only {
     display: block;
