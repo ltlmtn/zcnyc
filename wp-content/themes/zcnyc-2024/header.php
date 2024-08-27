@@ -12,18 +12,6 @@
 ?>
 
 <?php /* This should always be included just before the </head> tag. */ wp_head(); ?>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.css" integrity="sha512-56GJrpSgHk6Mc9Fltt+bQKcICJoEpxtvozXPA5n5OT0rfWiqGlJmJCI/vl16kctf/0XbBloh03vl7OF2xFnR8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?><?= $styleSheetHash; ?>" />
-<link rel="stylesheet" type="text/css" media="all" href="<?= get_stylesheet_directory_uri(); ?>/assets/css/base.css<?= $styleSheetHash; ?>" />
-<link rel="stylesheet" type="text/css" media="all" href="<?= get_stylesheet_directory_uri(); ?>/assets/css/tablet.css<?= $styleSheetHash; ?>" />
-<link rel="stylesheet" type="text/css" media="all" href="<?= get_stylesheet_directory_uri(); ?>/assets/css/desktop.css<?= $styleSheetHash; ?>" />
-<link rel="stylesheet" type="text/css" media="all" href="<?= get_stylesheet_directory_uri(); ?>/assets/fonts/stylesheet.css<?= $styleSheetHash; ?>" />
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js" integrity="sha512-0UbR6HN0dY8fWN9T7fF658896tsPgnbRREHCNq46J9/JSn8GonXDZmqtTc3qS879GM0zV49b9LPhdc/maKP8Kg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
 </head>
 
 <?php

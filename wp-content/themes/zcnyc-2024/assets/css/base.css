@@ -325,7 +325,13 @@ body.menu-active .header-areas .nav {
 }
 
 .nav-content a:hover {
+  opacity: 0.85;
   text-decoration: none;
+}
+
+.nav-content .current-menu-item a {
+  color: var(--red);
+  font-weight: bold;
 }
 
 .menu-shader {
@@ -886,4 +892,44 @@ body.teachers .rs-teacher.rs-group {
 
 .single-teacher .rs-teacher-content {
   padding: 1rem 0 !important;
+}
+
+.page-content h2 {
+  font: bold 1.5rem var(--primary);
+  margin-bottom: 1rem;
+}
+
+.page-content h3 {
+  font: 300 1.5rem var(--secondary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.page-content h4 {
+  font: bold 1rem var(--primary);
+  margin-bottom: 1rem;
+}
+
+.page-content ul, 
+.page-content ol {
+  font-family: var(--secondary);
+  margin: 1.25rem;
+}
+
+.page-content ul {
+  list-style-type: square;
+}
+
+.page-content li {
+  margin-bottom: 0.5rem;
+}
+
+.wp-block-quote {
+  border-color: var(--red);
+}
+
+@media screen and ( max-width: 1079px ) {
+  .mobile-only {
+    display: block;
+  }
 }
