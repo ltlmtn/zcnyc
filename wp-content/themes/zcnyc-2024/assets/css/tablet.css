@@ -164,4 +164,8 @@
         padding: 4rem 0;
     }
 
+    body:not(.home) .page-content {
+      padding: 4rem 0;
+    }
+
 }

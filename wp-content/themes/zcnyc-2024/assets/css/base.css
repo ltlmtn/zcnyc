@@ -831,7 +831,7 @@ h1.rs-program-title {
 }
 
 body:not(.home) .page-content {
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .asw .rs-program,
