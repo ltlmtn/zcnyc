@@ -932,6 +932,21 @@ body.teachers .rs-teacher.rs-group {
   margin: 0;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-carousel .content h2,
+.hero h1 {
+  animation: fadeIn 1s ease 1s 1 normal forwards;
+  opacity: 0;
+}
+
 @media screen and ( max-width: 1079px ) {
   .mobile-only {
     display: block;
