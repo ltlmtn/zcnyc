@@ -5,7 +5,7 @@
     } else {
         $autoplay = 'false';
     }
-    $monochrome = $attributes['monochrome'];
+    $monochrome = get_theme_mod('monochrome_heroes');
     if( $monochrome == 1 ) {
         $monochrome = 'monochrome';
     } else {
