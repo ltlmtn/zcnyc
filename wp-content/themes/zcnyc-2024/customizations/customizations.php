@@ -6,9 +6,14 @@ function asw_customize_register( $wp_customize ) {
         'priority'          => 1
     ) );
 
+    $wp_customize->add_section( 'theme' , array(
+        'title'             => 'Theme Settings',
+        'priority'          => 2
+    ) );
+
     $wp_customize->add_section( 'seo' , array(
         'title'             => 'SEO',
-        'priority'          => 1
+        'priority'          => 3
     ) );
 
     // Banner Settings
@@ -60,6 +65,19 @@ function asw_customize_register( $wp_customize ) {
         'section' => 'seo',
         'description' => 'Upload the default image for the page.'
     ) ) );
+
+    // Theme Settings
+    $wp_customize->add_setting( 'monochrome_heroes', array( 
+        'default' => false, 
+        'sanitize_callback' => 'sanitize_text_field' 
+    ) ); 
+    $wp_customize->add_control( 'monochrome_heroes', array( 
+        'label' => 'Monochrome Heroes', 
+        'section' => 'theme', 
+        'type' => 'checkbox', 
+        'description' => 'Enable monochrome heroes.' 
+    ) );
+
 
 
 }
