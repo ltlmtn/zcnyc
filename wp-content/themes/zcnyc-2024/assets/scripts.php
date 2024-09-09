@@ -41,6 +41,7 @@
 
   <script>
     jQuery('.rs-program-location:contains("Zen Center of New York City")').text('ZCNYC');
+    jQuery('.rs-program-location:contains("Zen Mountain Monastery")').text('ZMM');
   </script>
 
 <?php endif; ?>
