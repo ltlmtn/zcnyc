@@ -245,7 +245,8 @@ body.menu-active .header-areas .menu-open {
 }
 
 .events-carousel .program-date {
-  background-color: black;
+  background-color: white;
+  color: black;
   padding: 0.25rem 1rem 0.25rem 2rem;
 }
 
@@ -712,13 +713,17 @@ button:hover {
 }
 
 .asw .rs-program-content-wrap .rs-program-date {
-  background-color: black;
-  color: white;
+  background-color: var(--smoke);
+  color: black;
   display: inline-block;
   margin-top: 0.5rem;
   margin-right: 0;
   padding: .25rem 1rem;
   translate: -1rem 0;
+}
+
+.asw .rs-program .rs-program-location {
+  margin-top: 0.5rem;
 }
 
 .asw .rs-program-content-wrap .asw .rs-program-location {
