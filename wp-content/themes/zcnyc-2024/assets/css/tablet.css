@@ -168,4 +168,9 @@
       padding: 4rem 0;
     }
 
+    .podcast-grid {
+        grid-gap: 4rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }

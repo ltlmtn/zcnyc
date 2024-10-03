@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-  color: var(--red);
+  color: var(--hover);
   text-decoration: none;
 }
 
@@ -957,6 +957,19 @@ body.teachers .rs-teacher.rs-group {
 .hero h1 {
   animation: fadeIn 1s ease 1s 1 normal forwards;
   opacity: 0;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.podcast-grid .timestamp {
+  background-color: var(--smoke);
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
 }
 
 @media screen and ( max-width: 1079px ) {
