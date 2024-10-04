@@ -27,7 +27,7 @@
     ?>
         <article>
             <div class="title">
-                <a href="<?php echo $itemRSS['link']; ?>" target="_blank">
+                <a href="<?php echo $itemRSS['link']; ?>" target="_blank" title="View podcast on ZMM.org">
                     <h3><?php echo $itemRSS['title']; ?> &rarr;</h3>
                 </a>
             </div>
