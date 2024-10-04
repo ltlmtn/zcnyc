@@ -972,6 +972,11 @@ body.teachers .rs-teacher.rs-group {
   padding: 0.5rem;
 }
 
+.podcast-grid audio {
+  margin-top: 1rem;
+  width: 100%;
+}
+
 @media screen and ( max-width: 1079px ) {
   .mobile-only {
     display: block;
