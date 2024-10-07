@@ -8,7 +8,7 @@
     }
 ?>
 
-<div class="podcast-grid desktop-width">
+<div class="podcast-grid">
 
     <?php
     //https://stackoverflow.com/questions/37776950/rss-xml-show-itunesimage-url-in-php
