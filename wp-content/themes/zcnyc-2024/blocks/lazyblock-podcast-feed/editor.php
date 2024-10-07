@@ -28,7 +28,7 @@ foreach ($doc->getElementsByTagName('item') as $node) {
 
 ?>
     <ol>
-        <li><?php echo $itemRSS['title']; ?> &rarr;</li>
+        <li><?php echo $itemRSS['title']; ?></li>
     </ol>
 
 <?php 
