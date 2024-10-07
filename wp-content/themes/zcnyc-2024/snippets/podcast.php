@@ -14,7 +14,10 @@
     $doc = new DOMDocument();
     $doc->load('https://zmm.org/feed/podcast/zcnyc/');
 
+    $counter = 0;
     foreach ($doc->getElementsByTagName('item') as $node) {
+        if ($counter >= 6) break;
+
         $itemRSS = array ( 
             'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
             'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
@@ -41,7 +44,9 @@
             </div>
         </article>
 
-    <?php } ?>
+    <?php 
+        $counter++;
+    } ?>
 
 </div>
 
