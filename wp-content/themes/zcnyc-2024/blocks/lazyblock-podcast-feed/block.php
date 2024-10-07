@@ -1,5 +1,4 @@
 <?php
-    get_header(); 
     $feed_url = $attributes['url'];
     $display_limit = $attributes['limit'];
     if( empty($display_limit) ) {
@@ -8,10 +7,6 @@
         $limit = $display_limit;
     }
 ?>
-
-<main class="page-content desktop-width">
-    <?php the_content(); ?>
-</main>
 
 <div class="podcast-grid desktop-width">
 
@@ -66,5 +61,3 @@
         }
     }, true);
 </script>
-
-<?php get_footer(); ?>

@@ -14,6 +14,7 @@ $doc = new DOMDocument();
 $doc->load($feed_url);
 
 $counter = 0;
+echo '<ol>';
 foreach ($doc->getElementsByTagName('item') as $node) {
     if ($counter >= $limit ) break;
 
@@ -27,10 +28,9 @@ foreach ($doc->getElementsByTagName('item') as $node) {
     $formattedDate = date('F j, Y', strtotime($itemRSS['date']));
 
 ?>
-    <ol>
-        <li><?php echo $itemRSS['title']; ?></li>
-    </ol>
+    <li><?php echo $itemRSS['title']; ?></li>
 
-<?php 
-    $counter++;
+<?php
+echo '</ol>';
+$counter++;
 } ?>
