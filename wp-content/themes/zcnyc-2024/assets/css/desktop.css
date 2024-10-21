@@ -4,28 +4,13 @@
     display: block;
   }
 
-  .hero-carousel .image:before {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-    width: 50%;
-  }
-
-  .hero-carousel .content {
-    color: white;
-    left: 50%;
-    max-width: var(--desktop);
-    position: absolute;
-    bottom: 50%;
-    translate: -50% 50%;
-  }
-
   .hero-carousel .content h2 {
-    font: normal 6rem/1 var(--decorative);
+    font: normal 4rem/1 var(--decorative);
     hyphens: auto;
-    max-width: 50%;
   }
 
   .hero-carousel .slick-dots {
-    bottom: 4rem;
+    bottom: 3rem;
   }
 
   .events-carousel {
