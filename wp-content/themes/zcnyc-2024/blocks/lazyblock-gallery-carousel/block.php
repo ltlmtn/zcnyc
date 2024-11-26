@@ -40,7 +40,7 @@
             autoplaySpeed: <?= $autoplay_speed; ?>,
             arrows: true,
             dots: false,
-            infinite: false,
+            infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
