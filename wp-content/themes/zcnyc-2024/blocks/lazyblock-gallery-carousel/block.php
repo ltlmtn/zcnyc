@@ -26,12 +26,7 @@
                 } else {
                     $image = $full_image[0];
                 }
-                $image_alt = $image['alt'];
-                if( $image_alt ) {
-                    $alt = $image_alt;
-                } else {
-                    $alt = 'Gallery Image';
-                }
+                $alt = 'Gallery Image';
             ?>
             <img src="<?= $image; ?>" alt="<?= $alt; ?>">
         <?php endforeach; ?>
