@@ -92,6 +92,14 @@
       grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .gallery-carousel .slick-next {
+    right: -1rem;
+  }
+  
+  .gallery-carousel .slick-prev {
+    left: -1rem;
+  }
+
 }
 
 @media screen and (min-width: 1280px) {
