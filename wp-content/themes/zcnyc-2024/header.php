@@ -4,6 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html, charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-90NEQ2H8DW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-90NEQ2H8DW');
+</script>
+
 <?php get_template_part('snippets/header_meta') ?>
 
 <?php 
